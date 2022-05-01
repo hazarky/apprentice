@@ -40,3 +40,4 @@ Once the base site is setup, run the **apprentice-push.sh** script.
 ```
 ./apprentice-push.sh
 ```
+Then the Webapp will be completed! 
