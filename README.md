@@ -1,8 +1,35 @@
-Elgg Starter Project [![Build Status](https://travis-ci.org/Elgg/starter-project.svg?branch=master)](https://travis-ci.org/Elgg/starter-project)
-====
+#   Apprentice guide
+Welcome to the apprentice project guide
 
-This is a quickstart skeleton for building a site based on Elgg 2.x.
 
-## Installation
+## Getting started
+ Download the repo
 
-Follow the instructions for [installing Elgg with Composer](http://learn.elgg.org/en/stable/intro/install.html#overview).
+ run the INSTALL.sh script
+```
+./INSTALL.sh
+```
+configure the database and have the admin user **admin** with password **apprentice**
+```
+ CREATE DATABSASE apprentice_database;
+```
+use the newly created database
+```
+ use apprentice_database;
+```
+
+Create user **apprentice_db_user** 
+```
+create user 'apprentice_db_user'@'0.0.0.0' identified by 'apprentice-passwd';
+```
+grant all privileges on apprentice_database and flush it.
+```
+grant all privielges on  apprentice_database to 'apprentice_db_user'@'0.0.0.0';
+
+flush privileges;
+```
+
+Access the site
+```
+http://[your-ip-address]:80
+```
