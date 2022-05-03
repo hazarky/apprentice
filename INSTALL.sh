@@ -17,6 +17,7 @@ function install-elgg () {
     sudo mv composer.phar /usr/bin/composer
     git clone https://github.com/Elgg/Elgg.git
     sudo mv Elgg/* /var/www/html
+    rm -rf Elgg
     sudo mkdir /var/www/html/data
     sudo chown -R www-data:www-data /var/www/html
     sudo mkdir /var/www/html/apprentice-data
