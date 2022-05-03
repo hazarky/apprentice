@@ -9,7 +9,7 @@ Welcome to the apprentice project guide
 ```
 ./INSTALL.sh
 ```
-configure the database and have the admin user **admin** with password **apprentice**
+configure the database and have the admin user **apprentice_user** with password **apprentice**
 ```
  CREATE DATABSASE apprentice_database;
 ```
