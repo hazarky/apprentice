@@ -1,0 +1,19 @@
+/* ***************************************
+	  PROGRESS BAR
+**************************************** */
+.elgg-progressbar {
+	height: 1rem;
+	border: 1px solid #000000;
+	border-radius: 0.5rem;
+}
+.ui-progressbar-value {
+	height: 1rem;
+	background: #ac8d00;
+	border-radius: 0.5rem;
+	margin: -1px 0 0 -1px;
+}
+.elgg-progressbar-counter {
+	float: left;
+	color: white;
+	margin: 1px;
+}

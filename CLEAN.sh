@@ -10,8 +10,8 @@ function splash-screen () {
 }
 
 function remove-elgg () {
-    sudo apt remove /var/www/html/*
-    sudo apt remove /var/www/apprentice-data
+    sudo rm -rf  /var/www/html/*
+    sudo rm -rf /var/www/apprentice-data
     echo "apprentice-cleanup log: Please remove composer binary located at $(whcih composer)" >> apprentice-clean.log
 }
 function remove-apache-php () {
@@ -26,7 +26,7 @@ function remove-mysql () {
     sudo systemctl disable mysql
     echo "apprentice-cleanup log: disabled mysql database " >> aprentice-clean.log
 }
-function install-packages () {
+function remove-packages () {
     remove-apache-php
     sudo apt remove  -y php php-gd php7.4-mysql php-json php-xml php-mbstring php-intl ssmtp libapache2-mod-php
     remove-mysql
@@ -43,8 +43,7 @@ function setup-guide () {
 }
 
 function done-screen () {
-    printf "############\nCompleted!!\n############\n
-    Project should be clean."
+    printf "############\nCompleted!!\n############\nProject should be clean."
 }
 function main () {
     splash-screen

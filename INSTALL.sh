@@ -19,6 +19,9 @@ function install-elgg () {
     sudo mv Elgg/* /var/www/html
     sudo mkdir /var/www/html/data
     sudo chown -R www-data:www-data /var/www/html
+    sudo mkdir /var/www/html/apprentice-data
+    sudo chown -R www-data:www-data /var/www/apprentice-data
+    sudo chmod 777 /var/www/apprentice-data
     cd /var/www/html
     composer self-update
 }
