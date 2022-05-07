@@ -6,7 +6,7 @@
 ########
 
 function splash-screen () {
-    printf "Welcome to apprentice installation"
+    printf "Welcome to apprentice installation\n"
 }
 
 function install-elgg () {
@@ -24,10 +24,11 @@ function install-elgg () {
     sudo chown -R www-data:www-data /var/www/apprentice-data
     sudo chmod 777 /var/www/apprentice-data
     cd /var/www/html
-    composer self-update
+    sudo rm -rf index.html
+    sudo composer install
 }
 function setup-php () {
-    phpenmod pdo_mysql
+    sudo phpenmod pdo_mysql
     sudo a2enmod rewrite
     sudo a2enmod php
     systemctl restart apache2
