@@ -1,6 +1,7 @@
 #   Apprentice guide
-Welcome to the apprentice project guide
+Welcome to the apprentice project startup guide!
 
+The project is based on the framework from [elgg](https://github.com/Elgg/Elgg) social network platform.
 
 ## Getting started
  Download the repo
