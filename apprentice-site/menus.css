@@ -186,7 +186,7 @@
 
 .elgg-menu-page,
 .elgg-menu-owner-block {
-	background: #ffffff;
+	background: #000;
 	border: 1px solid $(border-color-soft);
 	margin-bottom: 2rem;
 
@@ -380,7 +380,7 @@
 			}
 			
 			&:hover {
-				color:  #ac8d00;
+				color: #ac8d00;
 				text-decoration: none;
 			}
 		}
