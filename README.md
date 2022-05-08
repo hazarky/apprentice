@@ -1,4 +1,5 @@
 #   Apprentice guide
+![main](img/DNWS_Logo_1_with_text.png)
 Welcome to the apprentice project startup guide!
 
 The project is based on the framework from [elgg](https://github.com/Elgg/Elgg) social network platform.
