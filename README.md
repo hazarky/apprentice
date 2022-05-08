@@ -2,7 +2,7 @@
 Welcome to the apprentice project startup guide!
 
 The project is based on the framework from [elgg](https://github.com/Elgg/Elgg) social network platform.
-
+This startup guide is designed to be used on Linux (tested on ubuntu 20.04)
 ## Getting started
  Download the repo
 
